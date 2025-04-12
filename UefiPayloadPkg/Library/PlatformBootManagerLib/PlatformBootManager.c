@@ -284,6 +284,8 @@ PlatformBootManagerAfterConsole (
       L"\n"
       );
   }
+  InitializeAppleSupport (gImageHandle, gST);
+  IoWrite8(0xb2, 0xcd);
 }
 
 /**

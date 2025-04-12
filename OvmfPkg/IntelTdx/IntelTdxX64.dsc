@@ -494,8 +494,8 @@
   gEfiMdePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0
 
   # Set video resolution for text setup.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|640
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|480
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|800
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|600
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdSmbiosVersion|0x0208
   gEfiMdeModulePkgTokenSpaceGuid.PcdSmbiosDocRev|0x0
@@ -664,8 +664,6 @@
   MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
   MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
   MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
-  FatPkg/EnhancedFatDxe/Fat.inf
-  MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe.inf
   OvmfPkg/VirtioFsDxe/VirtioFsDxe.inf
   MdeModulePkg/Bus/Scsi/ScsiBusDxe/ScsiBusDxe.inf
   MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe.inf

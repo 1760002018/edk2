@@ -200,7 +200,24 @@ INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
 !if $(DISABLE_SERIAL_TERMINAL) == FALSE
 INF MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
 !endif
+
+!if $(USE_PLATFORM_GOP) == TRUE
+!if "X64" in $(ARCH)
+INF UefiPayloadPkg/PlatformGopPolicy/PlatformGopPolicy.inf
+!endif
+FILE DRIVER = FF0C8745-3270-4439-B74F-3E45F8C77064 {
+  SECTION DXE_DEPEX_EXP = {gPlatformGOPPolicyGuid}
+  SECTION PE32 = UefiPayloadPkg/IntelGopDriver.efi
+  SECTION UI = "IntelGopDriver"
+}
+
+FILE FREEFORM = 878AC2CC-5343-46F2-B563-51F89DAF56BA {
+  SECTION RAW = UefiPayloadPkg/vbt.bin
+  SECTION UI = "IntelGopVbt"
+}
+!else
 INF UefiPayloadPkg/GraphicsOutputDxe/GraphicsOutputDxe.inf
+!endif
 
 #
 # SCSI/ATA/IDE/DISK Support
@@ -221,7 +238,49 @@ INF MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
 !if $(RAM_DISK_ENABLE) == TRUE
 INF MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
 !endif
-INF FatPkg/EnhancedFatDxe/Fat.inf
+
+#
+# FSDriverz
+# 
+!if $(ARCH) == X64
+INF  RuleOverride=BINARY USE = X64 FSDriverz/affs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/afs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/apfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/bfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/btrfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/cbfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/cpio.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/exfat.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/ext2.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/f2fs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/fat.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/hfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/hfsplus.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/iso9660.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/jfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix2_be.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix2.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix3_be.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix3.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix_be.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/minix.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/newc.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/nilfs2.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/ntfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/odc.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/procfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/reiserfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/romfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/sfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/squash4.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/tar.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/udf.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/ufs1_be.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/ufs1.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/ufs2.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/xfs.inf
+INF  RuleOverride=BINARY USE = X64 FSDriverz/zfs.inf
+!endif
 
 #
 # SD/eMMC Support
@@ -251,6 +310,7 @@ INF  MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
 INF  MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
 INF  MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
 !endif
+INF  IntelFrameworkModulePkg/Universal/DataHubDxe/DataHubDxe.inf
 
 #
 # UEFI network modules

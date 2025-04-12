@@ -2195,12 +2195,12 @@ typedef struct {
 //
 // EFI File location to boot from on removable media devices
 //
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_IA32     L"\\EFI\\BOOT\\BOOTIA32.EFI"
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_IA64     L"\\EFI\\BOOT\\BOOTIA64.EFI"
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_X64      L"\\EFI\\BOOT\\BOOTX64.EFI"
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_ARM      L"\\EFI\\BOOT\\BOOTARM.EFI"
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_AARCH64  L"\\EFI\\BOOT\\BOOTAA64.EFI"
-#define EFI_REMOVABLE_MEDIA_FILE_NAME_RISCV64  L"\\EFI\\BOOT\\BOOTRISCV64.EFI"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_IA32     L"efi\\boot\\bootia32.efi"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_IA64     L"efi\\boot\\bootia64.efi"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_X64      L"efi\\boot\\bootx64.efi"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_ARM      L"efi\\boot\\bootarm.efi"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_AARCH64  L"efi\\boot\\bootaa64.efi"
+#define EFI_REMOVABLE_MEDIA_FILE_NAME_RISCV64  L"efi\\boot\\bootriscv64.efi"
 
 #if !defined (EFI_REMOVABLE_MEDIA_FILE_NAME)
   #if   defined (MDE_CPU_IA32)
@@ -2222,7 +2222,7 @@ typedef struct {
 //
 // The directory within the active EFI System Partition defined for delivery of capsule to firmware
 //
-#define EFI_CAPSULE_FILE_DIRECTORY  L"\\EFI\\UpdateCapsule\\"
+#define EFI_CAPSULE_FILE_DIRECTORY  L"efi\\updatecapsule\\"
 
 #include <Uefi/UefiPxe.h>
 #include <Uefi/UefiGpt.h>

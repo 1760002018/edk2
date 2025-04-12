@@ -1971,6 +1971,7 @@ EfiBootManagerBoot (
       //
       BmReportLoadFailure (EFI_SW_DXE_BS_EC_BOOT_OPTION_LOAD_ERROR, Status);
       BootOption->Status = Status;
+      BdsBootApple();
       return;
     }
   }

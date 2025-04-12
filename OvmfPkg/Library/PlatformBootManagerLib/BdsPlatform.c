@@ -1724,6 +1724,9 @@ PlatformBootManagerAfterConsole (
   SetBootOrderFromQemu ();
 
   PlatformBmPrintScRegisterHandler ();
+
+  InitializeAppleSupport (gImageHandle, gST);
+
 }
 
 /**

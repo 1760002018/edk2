@@ -34,6 +34,7 @@
   UefiPayloadPkg/UefiPayloadPkg.dec
 
 [LibraryClasses]
+  AppleSupportLib
   BaseLib
   UefiBootServicesTableLib
   UefiRuntimeServicesTableLib

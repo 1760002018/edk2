@@ -54,6 +54,8 @@
 
   gUniversalPayloadPlatformBootManagerOverrideProtocolGuid = { 0xdb3fc2df, 0x7376, 0x4a8d, { 0x82, 0xab, 0x91, 0x54, 0xa1, 0x36, 0xa6, 0x5a } }
 
+  gEfiConsoleControlProtocolGuid        = {0xf42f7782, 0x012e, 0x4c12, {0x99, 0x56, 0x49, 0xf9, 0x43, 0x04, 0xf7, 0x21}}
+
 ################################################################################
 #
 # PCD Declarations section - list of all PCDs Declared by this Package

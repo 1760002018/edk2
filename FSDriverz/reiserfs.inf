@@ -1,0 +1,10 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = reiserfs
+  FILE_GUID                      = 48dc5880-7f4c-11ee-8df9-802bf92a2e2f
+  VERSION_STRING                 = 1.0
+  MODULE_TYPE                    = UEFI_DRIVER
+  VALID_ARCHITECTURES            = X64
+
+[Binaries.X64]
+  PE32|reiserfs_x64.efi|*
