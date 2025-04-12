@@ -15,7 +15,7 @@
 // Device offsets and constants
 //
 
-#define PCI_VENDOR_ID_VMWARE         (0x15ad)
+#define PCI_VENDOR_ID_VMWARE         (0x1960)
 #define PCI_DEVICE_ID_VMWARE_PVSCSI  (0x07c0)
 
 //

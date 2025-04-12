@@ -32,7 +32,7 @@
 //
 // Virtio IDs
 //
-#define VIRTIO_VENDOR_ID   0x1AF4
+#define VIRTIO_VENDOR_ID   0x1960
 #define VIRTIO_MMIO_MAGIC  0x74726976                  // "virt"
 
 //

@@ -15,7 +15,7 @@
 #include <IndustryStandard/Acpi.h>
 #include <Platform.h>
 
-#define EFI_ACPI_OEM_TABLE_ID                      SIGNATURE_64('B','V','M','A','D','T',' ',' ')
+#define EFI_ACPI_OEM_TABLE_ID                      SIGNATURE_64('C','E','C','L',' ',' ',' ',' ')
 
 //
 // Local APIC address

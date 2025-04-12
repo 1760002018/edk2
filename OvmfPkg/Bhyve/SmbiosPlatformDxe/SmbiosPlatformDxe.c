@@ -12,9 +12,9 @@
 #include "SmbiosPlatformDxe.h"
 
 #define TYPE0_STRINGS \
-  "EFI Development Kit II / OVMF\0"     /* Vendor */ \
-  "0.0.0\0"                             /* BiosVersion */ \
-  "02/06/2015\0"                        /* BiosReleaseDate */
+  "CECL\0"     /* Vendor */ \
+  "1960\0"                             /* BiosVersion */ \
+  "06/22/2007\0"                        /* BiosReleaseDate */
 //
 // Type definition and contents of the default Type 0 SMBIOS table.
 //
