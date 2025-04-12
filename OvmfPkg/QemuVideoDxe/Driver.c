@@ -41,31 +41,31 @@ QEMU_VIDEO_CARD  gQemuVideoCardList[] = {
     L"Cirrus 5446"
   },{
     PCI_CLASS_DISPLAY_VGA,
-    0x1234,
+    0x2007,
     0x1111,
     QEMU_VIDEO_BOCHS_MMIO,
     L"QEMU Standard VGA"
   },{
     PCI_CLASS_DISPLAY_OTHER,
-    0x1234,
+    0x2007,
     0x1111,
     QEMU_VIDEO_BOCHS_MMIO,
     L"QEMU Standard VGA (secondary)"
   },{
     PCI_CLASS_DISPLAY_VGA,
-    0x1b36,
+    0x2007,
     0x0100,
     QEMU_VIDEO_BOCHS,
     L"QEMU QXL VGA"
   },{
     PCI_CLASS_DISPLAY_VGA,
-    0x1af4,
+    0x2007,
     0x1050,
     QEMU_VIDEO_BOCHS_MMIO,
     L"QEMU VirtIO VGA"
   },{
     PCI_CLASS_DISPLAY_VGA,
-    0x15ad,
+    0x2007,
     0x0405,
     QEMU_VIDEO_VMWARE_SVGA,
     L"QEMU VMWare SVGA"

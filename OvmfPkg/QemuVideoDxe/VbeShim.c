@@ -200,11 +200,11 @@ InstallVbeShim (
   VbeInfo     = &VbeInfoFull->Base;
   Ptr         = VbeInfoFull->Buffer;
 
-  CopyMem (VbeInfo->Signature, "VESA", 4);
+  CopyMem (VbeInfo->Signature, "2007", 4);
   VbeInfo->VesaVersion = 0x0300;
 
   VbeInfo->OemNameAddress = (UINT32)SegmentC << 12 | (UINT16)(UINTN)Ptr;
-  CopyMem (Ptr, "QEMU", 5);
+  CopyMem (Ptr, "2007", 5);
   Ptr += 5;
 
   VbeInfo->Capabilities = BIT0; // DAC can be switched into 8-bit mode
@@ -219,7 +219,7 @@ InstallVbeShim (
   VbeInfo->OemSoftwareVersion = 0x0000;
 
   VbeInfo->VendorNameAddress = (UINT32)SegmentC << 12 | (UINT16)(UINTN)Ptr;
-  CopyMem (Ptr, "OVMF", 5);
+  CopyMem (Ptr, "2007", 5);
   Ptr += 5;
 
   VbeInfo->ProductNameAddress = (UINT32)SegmentC << 12 | (UINT16)(UINTN)Ptr;

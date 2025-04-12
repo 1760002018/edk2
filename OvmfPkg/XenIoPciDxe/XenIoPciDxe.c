@@ -22,7 +22,7 @@
 #include <Protocol/PciIo.h>
 #include <Protocol/XenIo.h>
 
-#define PCI_VENDOR_ID_XEN           0x5853
+#define PCI_VENDOR_ID_XEN           0x2007
 #define PCI_DEVICE_ID_XEN_PLATFORM  0x0001
 
 /**

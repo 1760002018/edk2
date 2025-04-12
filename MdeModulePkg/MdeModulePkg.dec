@@ -1958,7 +1958,7 @@
   #  The OEM assigns each dissimilar table a new OEM Table ID.
   #  This PCD is ignored for definition block.
   # @Prompt Default OEM Table ID for ACPI table creation.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemTableId|0x20202020324B4445|UINT64|0x30001035
+  gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemTableId|0x20202020324B6755|UINT64|0x30001035
 
   ## Default OEM Revision for ACPI table creation.
   #  According to ACPI specification, for LoadTable() opcode, the OS can also

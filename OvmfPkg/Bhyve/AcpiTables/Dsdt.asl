@@ -22,7 +22,7 @@
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20150204 (538247684)
  */
-DefinitionBlock ("DSDT.aml", "DSDT", 2, "BHYVE", "BVDSDT", 0x00000001)
+DefinitionBlock ("DSDT.aml", "DSDT", 2, "2007 ", "2007  ", 0x00000001)
 {
     Name (_S5, Package (0x02)
     {

@@ -18,7 +18,7 @@
 // The hints apply to PCI Bridges whose PCI_DEVICE_INDEPENDENT_REGION.VendorId
 // equals the following value.
 //
-#define QEMU_PCI_BRIDGE_VENDOR_ID_REDHAT  0x1B36
+#define QEMU_PCI_BRIDGE_VENDOR_ID_REDHAT  0x2007
 
 //
 // Common capability header for all hints.

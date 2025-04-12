@@ -7,7 +7,7 @@
 
 #include "Platform.h"
 
-#define EFI_ACPI_OEM_TABLE_ID     SIGNATURE_64('B','V','F','A','C','P',' ',' ')
+#define EFI_ACPI_OEM_TABLE_ID     SIGNATURE_64('2','0','0','7',' ',' ',' ',' ')
 
 EFI_ACPI_3_0_FIXED_ACPI_DESCRIPTION_TABLE FACP = {
   {

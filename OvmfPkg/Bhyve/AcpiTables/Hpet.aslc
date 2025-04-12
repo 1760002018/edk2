@@ -9,8 +9,8 @@
 
 #include "Platform.h"
 
-#define EFI_ACPI_HPET_DESCRIPTION_TABLE_SIGNATURE  SIGNATURE_32('H', 'P', 'E', 'T')
-#define EFI_ACPI_OEM_TABLE_ID                      SIGNATURE_64('B','V','H','P','E','T',' ',' ')
+#define EFI_ACPI_HPET_DESCRIPTION_TABLE_SIGNATURE  SIGNATURE_32('2', '0', '0', '7')
+#define EFI_ACPI_OEM_TABLE_ID                      SIGNATURE_64('2','0','0','7',' ',' ',' ',' ')
 
 //
 // Ensure proper structure formats
