@@ -14,7 +14,7 @@ EFI_GUID gAppleVendorVariableGuid = { 0x4d1ede05, 0x38c7, 0x4a6a, { 0x9c, 0xc6, 
 EFI_STATUS InitializeFirmware () {
   EFI_STATUS Status;
   UINTN DataSize;
-  CHAR8 bootArgs[] = "-no_compat_check tlbto_us=0";
+  CHAR8 bootArgs[] = "-no_compat_check tlbto_us=0 colors=32";
   CHAR8 csrActiveConfig[] = { 0x01 };
   CHAR8 ExtendedFirmwareFeatures[] = { 0x66, 0xF0, 0xB3, 0xFF, 0x08, 0x00, 0x00, 0x00 };
   CHAR8 ExtendedFirmwareFeaturesMask[] = { 0xFF, 0xFF, 0xFF, 0xFF, 0x08, 0x00, 0x00, 0x00 };
