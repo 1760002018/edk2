@@ -1592,12 +1592,12 @@
   ## This PCD defines the video horizontal resolution.
   #  If this PCD is set to 0 then video resolution would be at highest resolution.
   # @Prompt Video horizontal resolution.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|800|UINT32|0x40000009
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|0|UINT32|0x40000009
 
   ## This PCD defines the video vertical resolution.
   #  If this PCD is set to 0 then video resolution would be at highest resolution.
   # @Prompt Video vertical resolution.
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|600|UINT32|0x4000000a
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|0|UINT32|0x4000000a
 
   #  The 4 PCDs below are used to specify the video resolution and text mode of text setup.
   #  To make text setup work in this resolution, PcdVideoHorizontalResolution, PcdVideoVerticalResolution,
@@ -1608,11 +1608,11 @@
 
   ## Specify the video horizontal resolution of text setup.
   # @Prompt Video Horizontal Resolution of Text Setup
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|800|UINT32|0x4000000b
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|0|UINT32|0x4000000b
 
   ## Specify the video vertical resolution of text setup.
   # @Prompt Video Vertical Resolution of Text Setup
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|600|UINT32|0x4000000c
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|0|UINT32|0x4000000c
 
   ## Specify the console output column of text setup.
   # @Prompt Console Output Column of Text Setup
